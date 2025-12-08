@@ -2,10 +2,12 @@ package com.kiran.easy;
 
 import java.util.Scanner;
 
-public class PythagorasTribalTheorem {
+public class PythagorasTripleCounter {
 	
 	/**
-	 * 
+	 * Counts the number of Pythagorean triples (a, b, c) 
+     * such that a^2 + b^2 = c^2 and all are ≤ limit.
+     * 
 	 * @param num
 	 * @return
 	 */
@@ -37,8 +39,11 @@ public class PythagorasTribalTheorem {
 			num = input.nextInt();
 		}
 		
-		PythagorasTribalTheorem ptt = new PythagorasTribalTheorem();
-		System.out.println(ptt.countTriples(num));
+		// Business Logic
+		PythagorasTripleCounter ptt = new PythagorasTripleCounter();
+		int result = ptt.countTriples(num);
+		
+		System.out.println(result);
 
 	}
 
